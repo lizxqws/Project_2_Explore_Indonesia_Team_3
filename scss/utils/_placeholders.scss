@@ -1,0 +1,19 @@
+%flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+%title-font {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+%subtitle-font {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+}

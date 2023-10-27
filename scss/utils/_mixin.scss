@@ -1,0 +1,10 @@
+@mixin button($button-width, $button-height, $button-gap) {
+  display: flex;
+  width: $button-width;
+  height: $button-height;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  gap: $button-gap;
+  flex-shrink: 0;
+}
