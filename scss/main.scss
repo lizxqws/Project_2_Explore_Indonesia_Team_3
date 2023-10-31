@@ -13,3 +13,9 @@
   width: 315px;
   margin: 0 auto;
 }
+
+@media (min-width: 1440px) {
+  .container {
+    width: 1270px;
+  }
+}
