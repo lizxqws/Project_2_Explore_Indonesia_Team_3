@@ -1,0 +1,8 @@
+.photo-gallery {
+    @extend %flex;
+    flex-direction: row;
+
+    &__wrapper {
+        @extend %flex;
+    }
+}

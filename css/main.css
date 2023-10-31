@@ -1,3 +1,13 @@
+.photo-gallery__wrapper, .photo-gallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.photo-gallery {
+  flex-direction: row;
+}
 * {
   box-sizing: border-box;
 }
