@@ -3,10 +3,12 @@
 @import "utils/placeholders";
 
 @import "components/header";
+@import "components/photo-gallery-section";
 @import "components/footer";
 
 * {
   box-sizing: border-box;
+  margin: 0;
 }
 
 .container {
