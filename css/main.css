@@ -1,3 +1,216 @@
+.baner__video, .baner__title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.baner__btn {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.baner__box--subtitle {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+.baner__background {
+  background-image: url(/src/images/backgroundbaner.png);
+  width: 100vw;
+  height: 1104px;
+  position: absolute;
+  top: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.baner {
+  width: 375px;
+  height: 1104px;
+}
+.baner__line--red {
+  width: 0;
+}
+.baner__line--white {
+  width: 0;
+}
+.baner__line--number {
+  display: none;
+}
+.baner__title {
+  color: #fff;
+  font-family: "Roboto";
+  font-size: 58px;
+  font-weight: 900;
+  line-height: 63px;
+  margin-top: 45px;
+  margin: 154px auto;
+  margin-bottom: 8px;
+  width: 314px;
+  height: 126px;
+}
+.baner__btn {
+  border-radius: 107px;
+  background: #dd2242;
+  border: none;
+  color: #fff;
+  margin: 0 auto;
+  display: flex;
+  width: 315px;
+  height: 59px;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  flex-shrink: 0;
+  color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+}
+.baner__img {
+  width: 0;
+}
+.baner__box {
+  border: 1px solid rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.6);
+  width: 314px;
+  height: 472px;
+  margin: 0 auto;
+  margin-top: 54px;
+}
+.baner__box--item {
+  padding-top: 35px;
+  padding-left: 32px;
+}
+.baner__box--number {
+  color: #dd2242;
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: 900;
+  width: 32px;
+  height: 19px;
+  margin: 0;
+}
+.baner__box--title {
+  color: #fff;
+  font-family: "DM Sans";
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 41px;
+  width: 121px;
+  margin: 0;
+}
+.baner__box--subtitle {
+  color: #939393;
+  font-family: "DM Sans";
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  width: 210px;
+  height: 46px;
+  margin: 0;
+}
+.baner__video {
+  width: 314px;
+  margin: 0 auto;
+}
+
+@media (min-width: 1440px) {
+  .baner {
+    height: 1080px;
+  }
+  .baner__background {
+    background-image: url(/src/images/desktopbackgrundbaner.png);
+    width: 100vw;
+    background-size: cover;
+  }
+  .baner__line--red {
+    width: 4px;
+    height: 100px;
+    top: 233px;
+    left: 70px;
+    background: #dd2242;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.45);
+    position: absolute;
+    border: none;
+  }
+  .baner__line--white {
+    width: 2px;
+    height: 296px;
+    top: 333px;
+    left: 71px;
+    background: linear-gradient(0deg, #fff 0%, #fff 100%), #fff;
+    position: absolute;
+    border: none;
+  }
+  .baner__line--number {
+    width: 21px;
+    height: 17px;
+    transform: rotate(-90deg);
+    color: #fff;
+    text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1);
+    font-family: "DM Sans";
+    font-size: 16px;
+    position: absolute;
+    top: 649px;
+    left: 55px;
+    font-weight: 700;
+  }
+  .baner__title {
+    width: 627px;
+    height: 260px;
+    margin-top: 266px;
+    color: #fff;
+    font-family: "Roboto";
+    font-size: 120px;
+    font-weight: 900;
+    line-height: 130px;
+    text-transform: uppercase;
+    margin-left: 204px;
+    margin-bottom: 20px;
+  }
+  .baner__btn {
+    margin-top: 20px;
+    display: flex;
+    width: 271px;
+    height: 82px;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    margin-left: 204px;
+  }
+  .baner__info {
+    display: flex;
+  }
+  .baner__img {
+    width: 21px;
+    height: 131px;
+    margin-top: 276px;
+    margin-left: 64px;
+  }
+  .baner__box {
+    width: 1225px;
+    height: 210px;
+    display: flex;
+    bottom: 0;
+    margin-left: 190px;
+    margin-top: 240px;
+    position: absolute;
+  }
+  .baner__video {
+    width: 417px;
+    height: 254px;
+    margin: 0;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+}
 * {
   box-sizing: border-box;
 }

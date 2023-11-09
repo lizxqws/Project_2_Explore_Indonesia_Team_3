@@ -1,0 +1,202 @@
+.baner__background {
+  background-image: url(/src/images/backgroundbaner.png);
+  width: 100vw;
+  height: 1104px;
+  position: absolute;
+  top: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.baner {
+  width: 375px;
+  height: 1104px;
+  &__line {
+    &--red {
+      width: 0;
+    }
+    &--white {
+      width: 0;
+    }
+    &--number {
+      display: none;
+    }
+  }
+
+  &__title {
+    color: $primaryColor;
+    font-family: "Roboto";
+    font-size: 58px;
+    font-weight: 900;
+    line-height: 63px;
+    margin-top: 45px;
+    @extend %flex;
+    margin: 154px auto;
+    margin-bottom: 8px;
+    width: 314px;
+    height: 126px;
+  }
+  &__btn {
+    border-radius: 107px;
+    background: $accentColor;
+    border: none;
+    color: $primaryColor;
+    margin: 0 auto;
+    @include button(
+      $button-width: 315px,
+      $button-height: 59px,
+      $button-gap: 5px
+    );
+    @extend %title-font;
+    color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+  }
+  &__img {
+    width: 0;
+  }
+
+  &__box {
+    border: 1px solid rgb(0, 0, 0, 0.6);
+    background: rgb(0, 0, 0, 0.6);
+    width: 314px;
+    height: 472px;
+    margin: 0 auto;
+    margin-top: 54px;
+    &--item {
+      padding-top: 35px;
+      padding-left: 32px;
+    }
+
+    &--number {
+      color: $accentColor;
+      font-family: "Roboto";
+      font-size: 16px;
+      font-weight: 900;
+      width: 32px;
+      height: 19px;
+      margin: 0;
+    }
+
+    &--title {
+      color: $primaryColor;
+      font-family: "DM Sans";
+      font-size: 26px;
+      font-weight: 700;
+      line-height: 41px;
+      width: 121px;
+      margin: 0;
+    }
+
+    &--subtitle {
+      color: #939393;
+      font-family: "DM Sans";
+      font-size: 16px;
+      @extend %subtitle-font;
+      line-height: 24px;
+      letter-spacing: 0.5px;
+      width: 210px;
+      height: 46px;
+      margin: 0;
+    }
+  }
+
+  &__video {
+    width: 314px;
+    margin: 0 auto;
+    @extend %flex;
+  }
+}
+
+@media (min-width: 1440px) {
+  .baner {
+    height: 1080px;
+
+    &__background {
+      background-image: url(/src/images/desktopbackgrundbaner.png);
+      width: 100vw;
+      background-size: cover;
+    }
+
+    &__line {
+      &--red {
+        width: 4px;
+        height: 100px;
+        top: 233px;
+        left: 70px;
+        background: $accentColor;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.45);
+        position: absolute;
+        border: none;
+      }
+      &--white {
+        width: 2px;
+        height: 296px;
+        top: 333px;
+        left: 71px;
+        background: linear-gradient(0deg, #fff 0%, #fff 100%), #fff;
+        position: absolute;
+        border: none;
+      }
+      &--number {
+        width: 21px;
+        height: 17px;
+        transform: rotate(-90deg);
+        color: $primaryColor;
+        text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1);
+        font-family: "DM Sans";
+        font-size: 16px;
+        position: absolute;
+        top: 649px;
+        left: 55px;
+        font-weight: 700;
+      }
+    }
+    &__title {
+      width: 627px;
+      height: 260px;
+      margin-top: 266px;
+      color: $primaryColor;
+      font-family: "Roboto";
+      font-size: 120px;
+      font-weight: 900;
+      line-height: 130px;
+      text-transform: uppercase;
+      margin-left: 204px;
+      margin-bottom: 20px;
+    }
+    &__btn {
+      margin-top: 20px;
+      @include button(
+        $button-width: 271px,
+        $button-height: 82px,
+        $button-gap: 10px
+      );
+      margin-left: 204px;
+    }
+    &__info {
+      display: flex;
+    }
+    &__img {
+      width: 21px;
+      height: 131px;
+      margin-top: 276px;
+      margin-left: 64px;
+    }
+    &__box {
+      width: 1225px;
+      height: 210px;
+      display: flex;
+      bottom: 0;
+      margin-left: 190px;
+      margin-top: 240px;
+      position: absolute;
+    }
+    &__video {
+      width: 417px;
+      height: 254px;
+      margin: 0;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+    }
+  }
+}
