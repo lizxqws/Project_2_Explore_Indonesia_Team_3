@@ -1,0 +1,121 @@
+.container-numbers {
+    width: 1922px;
+    height: 794px;
+    background: #020C21;
+     opacity: 90%;
+     position: relative;
+     top: 44%;
+}
+@media (max-width: 480px) {
+    .container-numbers {
+   position: relative;
+    width: 376px;
+    height: 929px;
+    top: 579px;
+  }
+  }
+  .title-numbers {
+    font-family: DM Sans;
+font-size: 60px;
+font-weight: 700;
+line-height: 90px;
+letter-spacing: 0em;
+text-align: center;
+top: 120px;
+position: relative;
+color: white;
+
+  }
+  @media (max-width: 480px) {
+    .title-numbers {
+   color: white;
+   top: 30px;
+  }
+  }
+  .text-numbers  {
+    position: relative;
+  width: 484px;
+  height:102px;
+font-size: 18px;
+font-weight: 400;
+line-height: 28px;
+letter-spacing: 0.5px;
+text-align: center;
+color: #E0E0E0;
+top: 70px;
+margin: auto;
+  }
+  @media (max-width: 480px) {
+    .text-numbers  {
+        position: relative;
+      width: 314px;
+      height:167px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    text-align: center;
+    color: #E0E0E0;
+   top: 0;
+    margin: auto;
+      }
+  }
+  .text-hundred {
+    font-family: DM Sans;
+font-size: 42px;
+font-weight: 700;
+line-height: 49px;
+letter-spacing: 0.40px;
+text-align: center;
+color: #DD2242;
+position: relative;
+left: 270px;
+top: 60px;
+  }
+  .text-calculations {
+ width: 341px;
+height: 70px;
+color: #E0E0E0;
+font-family: DM Sans;
+font-size: 18px;
+font-weight: 400;
+line-height: 28px;
+letter-spacing: 0.5px;
+text-align: center;
+position: relative;
+bottom: -200px;
+margin: 0 auto;
+left: -50px;
+ }
+ @media (max-width: 480px) {
+    .gf  {
+       display: flex;
+       flex-direction: column;
+      }
+  }
+  @media (max-width: 480px) {
+    .text-hundred  {
+     position: relative;
+     left: 0;
+     top: -50px;
+      }
+  }
+  @media (max-width: 480px) {
+    .text-calculations  {
+       left: 0;
+       bottom: 80px;
+      }
+  }
+  @media (max-width: 480px) {
+    .two  {
+       position: relative;
+       top:-100px;
+      }
+  }
+  @media (max-width: 480px) {
+    .text-two  {
+       position: relative;
+       top:-140px;
+      }
+  }
+ 
