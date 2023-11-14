@@ -1,17 +1,17 @@
-.photo-gallery__box, .photo-gallery__wrapper, .photo-gallery {
+.getting-there__article, .getting-there-number, .getting-there, .photo-gallery__box, .photo-gallery__wrapper, .photo-gallery {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
 
-.photo-gallery__box-title {
+.getting-there__article-title, .getting-there-title, .photo-gallery__box-title {
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
 }
 
-.photo-gallery__box-subtitle {
+.getting-there__article-mobsubtitle, .getting-there__article-link, .photo-gallery__box-subtitle {
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -64,6 +64,186 @@
     font-size: 18px;
     line-height: 28px;
     letter-spacing: 0.18px;
+  }
+}
+.getting-there {
+  margin: 0 auto;
+  background-color: #dce8f2;
+  font-family: "DM Sans", sans-serif;
+  padding-top: 29px;
+  padding-bottom: 73px;
+}
+.getting-there-title {
+  color: #010a20;
+  text-align: center;
+  font-size: 40px;
+  line-height: 46px;
+  margin-bottom: 45px;
+}
+.getting-there-number {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background-color: #dd2242;
+  color: white;
+  font-weight: 500;
+  line-height: 38px;
+  font-size: 26px;
+  font-style: normal;
+  margin-bottom: 18px;
+}
+.getting-there__article {
+  margin: 0 auto;
+}
+.getting-there__article-textbox {
+  width: 314px;
+}
+.getting-there__article-title {
+  color: #010a20;
+  text-align: center;
+  font-size: 22px;
+  line-height: 150%;
+  margin-bottom: 13px;
+}
+.getting-there__article-mobsubtitle, .getting-there__article-link {
+  color: rgba(21, 20, 57, 0.4);
+  text-align: center;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+}
+.getting-there__article-link {
+  margin-bottom: 32px;
+}
+.getting-there__article-link a {
+  color: #dd2242;
+  text-decoration: none;
+}
+.getting-there__article-customlink {
+  margin-bottom: 0;
+}
+.getting-there__article-mobtitle, .getting-there__article-subtitle {
+  display: none;
+}
+.getting-there__article-button {
+  display: none;
+}
+.getting-there-video {
+  width: 314px;
+  height: 208px;
+  border-radius: 7px;
+  margin-bottom: 40px;
+}
+
+@media (min-width: 1440px) {
+  .getting-there {
+    padding-top: 119px;
+    padding-bottom: 117px;
+  }
+  .getting-there__title-box {
+    width: 1141px;
+  }
+  .getting-there-title {
+    width: 1141px;
+    text-align: start;
+    font-size: 60px;
+    line-height: 90px;
+    margin-bottom: 44px;
+  }
+  .getting-there-number {
+    width: 59px;
+    height: 59px;
+    margin-bottom: 0;
+    position: relative;
+  }
+  .getting-there-line::before {
+    content: "";
+    bottom: 59px;
+    display: block;
+    height: 215px;
+    width: 3px;
+    opacity: 0.3;
+    background: rgba(21, 20, 57, 0.4);
+    position: absolute;
+  }
+  .getting-there-line::after {
+    content: "";
+    top: 59px;
+    display: block;
+    height: 496px;
+    width: 3px;
+    opacity: 0.3;
+    background: rgba(21, 20, 57, 0.4);
+    position: absolute;
+  }
+  .getting-there__article {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 1141px;
+    margin-bottom: 90px;
+  }
+  .getting-there__article-textbox {
+    width: 1039px;
+  }
+  .getting-there__article-title {
+    text-align: start;
+    font-size: 26px;
+    line-height: 41px;
+    margin-bottom: 28px;
+  }
+  .getting-there__article-mobsubtitle, .getting-there__article-link {
+    display: none;
+  }
+  .getting-there__article-mobtitle, .getting-there__article-subtitle {
+    display: block;
+  }
+  .getting-there__article-subtitle {
+    color: rgba(21, 20, 57, 0.4);
+    font-size: 23.475px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 38.146px;
+  }
+  .getting-there__article-button {
+    display: flex;
+    width: 210px;
+    height: 64px;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    flex-shrink: 0;
+    padding: 16px 24px;
+    border: none;
+    border-radius: 122px;
+    background: #dd2242;
+    color: #fff;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+    margin-top: 17px;
+  }
+  .getting-there__article-video {
+    display: flex;
+    margin-top: 94px;
+    width: 741px;
+  }
+  .getting-there__article-videotextbox {
+    width: 446px;
+    margin-left: 46px;
+  }
+  .getting-there__article-videotextbox h2 {
+    margin-bottom: 12px;
+  }
+  .getting-there__article:last-child {
+    margin-bottom: 0;
+  }
+  .getting-there-video {
+    width: 249px;
+    height: 166px;
+    margin-bottom: 0;
   }
 }
 * {
