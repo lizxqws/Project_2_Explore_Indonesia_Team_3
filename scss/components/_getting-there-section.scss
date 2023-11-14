@@ -1,7 +1,6 @@
 .getting-there {
   @extend %flex;
 
-  width: 100vw;
   margin: 0 auto;
   background-color: #dce8f2;
   font-family: "DM Sans", sans-serif;
@@ -35,6 +34,7 @@
 
   &__article {
     @extend %flex;
+    margin: 0 auto;
 
     &-textbox {
       width: 314px;
