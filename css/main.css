@@ -9,6 +9,10 @@
   top: 150px;
 }
 
+.container_explore {
+  overflow-x: hidden;
+}
+
 .slick-dots li.slick-active button:before {
   width: 26px;
   border-radius: 12px;
