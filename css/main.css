@@ -188,6 +188,10 @@
   margin: 0 auto;
 }
 
+.hidden-titles {
+  display: none;
+}
+
 @media (min-width: 1440px) {
   .container {
     width: 1270px;
