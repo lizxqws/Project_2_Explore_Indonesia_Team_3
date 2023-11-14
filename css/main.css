@@ -13,6 +13,11 @@
   overflow-x: hidden;
 }
 
+.explore__box {
+  width: 375px;
+  overflow: hidden;
+}
+
 .slick-dots li.slick-active button:before {
   width: 26px;
   border-radius: 12px;
@@ -64,9 +69,11 @@
 
 @media (max-width: 480px) {
   .explore-image {
-    width: 375px;
+    width: 100vw;
     height: 2063px;
     background-image: url("../images/explore photomobile.png");
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 }
 @media (max-width: 480px) {
