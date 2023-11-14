@@ -1,0 +1,125 @@
+.walkways {
+  @extend %flex;
+  margin: 0 auto;
+  background-image: url(../src/images/walkways-backgroung.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-top: 40px;
+  padding-bottom: 48px;
+
+  &__box {
+    @extend %flex;
+    width: 315px;
+    margin-bottom: 56px;
+
+    &-picture img {
+      border-radius: 10px;
+    }
+
+    &-picture {
+      width: 314px;
+      height: 232px;
+      margin-bottom: 34px;
+    }
+
+    &-picture-beaches {
+      height: 224px;
+    }
+
+    &-text {
+      @extend %flex;
+      align-items: flex-start;
+
+      width: 315px;
+      font-family: "DM Sans", sans-serif;
+
+      &-title {
+        @extend %title-font;
+
+        color: $primaryColor;
+        font-size: 40px;
+        line-height: 46px;
+        margin-bottom: 22px;
+      }
+
+      &-subtitle {
+        @extend %subtitle-font;
+
+        color: $subtitleColor;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.5px;
+        margin-bottom: 30px;
+      }
+
+      &-btn {
+        @include button(314px, 72px, 24px);
+        @extend %title-font;
+
+        font-family: "DM Sans", sans-serif;
+        padding: 16px 24px;
+        border-radius: 32px;
+        background-color: $accentColor;
+        border: none;
+        color: $primaryColor;
+        line-height: 150%;
+      }
+    }
+  }
+
+  &__box:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 1440px) {
+  .walkways {
+    padding-top: 207px;
+    padding-bottom: 305px;
+
+    &__box {
+      flex-direction: row;
+      justify-content: space-between;
+      width: 1241px;
+      margin-bottom: 192px;
+
+      &-picture {
+        width: 630px;
+        height: 460px;
+        margin-bottom: 0px;
+      }
+
+      &-picture-beaches {
+        width: 630px;
+      }
+
+      &-text {
+        width: 480px;
+        margin-bottom: 103px;
+
+        &-title {
+          font-size: 42px;
+          line-height: 50px;
+          margin-bottom: 24px;
+        }
+
+        &-subtitle {
+          width: 408px;
+          font-size: 18px;
+          line-height: 28px;
+          letter-spacing: 0.18px;
+          margin-bottom: 32px;
+        }
+
+        &-btn {
+          @include button(180px, 59px, 24px);
+        }
+      }
+    }
+
+    &__box:last-child {
+      flex-direction: row-reverse;
+    }
+  }
+}
