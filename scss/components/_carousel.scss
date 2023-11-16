@@ -14,8 +14,9 @@ top: 150px;
   overflow-x: hidden;
 }
 .explore__box {
-  width : 375px;
+ 
   overflow: hidden;
+  margin: 0 auto;
 }
 
 
@@ -68,8 +69,8 @@ top: 150px;
 }
 .explore-image {
   width: 1920px;
-  height: 2207px;
-  background-image: url('../images/explore photo.png');
+ background-image: url('../images/explore photo.png');
+ background-image: no-repeat;
 }
 @media (max-width: 480px) {
   .explore-image {
