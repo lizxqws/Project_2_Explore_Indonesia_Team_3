@@ -1,34 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/modern-normalize.css">
-    <link rel="stylesheet" href="./css/main.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,700;9..40,900&family=Roboto:wght@900&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/modern-normalize.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,700;9..40,900&family=Roboto:wght@900&display=swap"
+      rel="stylesheet"
+    />
     <title>Explore Indonesia</title>
-</head>
-    <body>
-        <header></header>
-        <main>
-            <section class="container photo-gallery">
-                <div class="photo-gallery__wrapper">
-                    <div class="photo-gallery__box">
-                        <h2 class="photo-gallery__box-title">Photo Gallery</h2>
-                        <p class="photo-gallery__box-subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dapibus mauris in lectus tempus, eget tincidunt.</p>
-                    </div>
-                    <picture>
-                        <!-- desktop -->
-                        <source srcset="./src/images/photo-gallery-desk@1x.jpg 1x, ./src/images/photo-gallery-desk@2x.jpg 2x" media="(min-width: 1440px)" type="image/jpeg"/>
-                        <!-- mobile -->
-                        <source srcset="./src/images/photo-gallery-mob@1x.jpg 1x, ./src/images/photo-gallery-mob@2x.jpg 2x" media="(min-width: 300px)" type="image/jpeg"/>
-                        <img src="./src/images/photo-gallery-desk@1x.jpg" alt="photo-gallery">
-                    </picture>
-                </div>
-            </section>
-        </main>
-        <footer></footer>
-    </body>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__icon">
+        <img
+          class="header__icon--flower"
+          src="./src/svg/flower.svg"
+          alt="flower"
+        />
+        <p class="header__icon--text">Explore Indonesia</p>
+      </div>
+      <ul class="header__navigation">
+        <li class="header__navigation--item">destinations</li>
+        <li class="header__navigation--item">experiences</li>
+        <li class="header__navigation--item">about</li>
+        <li class="header__navigation--item">gallery</li>
+      </ul>
+      <div class="header__svg">
+        <img
+          class="header__svg--search"
+          src="./src/svg/search.svg"
+          alt="search"
+        />
+        <img class="header__svg--menu" src="./src/svg/menu.svg" alt="menu" />
+      </div>
+    </header>
+    <main>
+      <section class="container photo-gallery">
+        <div class="photo-gallery__wrapper">
+          <div class="photo-gallery__box">
+            <h2 class="photo-gallery__box-title">Photo Gallery</h2>
+            <p class="photo-gallery__box-subtitle">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+              dapibus mauris in lectus tempus, eget tincidunt.
+            </p>
+          </div>
+          <picture>
+            <!-- desktop -->
+            <source
+              srcset="
+                ./src/images/photo-gallery-desk@1x.jpg 1x,
+                ./src/images/photo-gallery-desk@2x.jpg 2x
+              "
+              media="(min-width: 1440px)"
+              type="image/jpeg"
+            />
+            <!-- mobile -->
+            <source
+              srcset="
+                ./src/images/photo-gallery-mob@1x.jpg 1x,
+                ./src/images/photo-gallery-mob@2x.jpg 2x
+              "
+              media="(min-width: 300px)"
+              type="image/jpeg"
+            />
+            <img
+              src="./src/images/photo-gallery-desk@1x.jpg"
+              alt="photo-gallery"
+            />
+          </picture>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
 </html>
