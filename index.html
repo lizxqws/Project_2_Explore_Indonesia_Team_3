@@ -121,7 +121,21 @@
       </div>
       </div>
     </div>
-
+    <section class="container photo-gallery">
+        <div class="photo-gallery__wrapper">
+            <div class="photo-gallery__box">
+                <h2 class="photo-gallery__box-title">Photo Gallery</h2>
+                <p class="photo-gallery__box-subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dapibus mauris in lectus tempus, eget tincidunt.</p>
+            </div>
+            <picture>
+                <!-- desktop -->
+                <source srcset="./src/images/photo-gallery-desk@1x.jpg 1x, ./src/images/photo-gallery-desk@2x.jpg 2x" media="(min-width: 1440px)" type="image/jpeg"/>
+                <!-- mobile -->
+                <source srcset="./src/images/photo-gallery-mob@1x.jpg 1x, ./src/images/photo-gallery-mob@2x.jpg 2x" media="(min-width: 300px)" type="image/jpeg"/>
+                <img src="./src/images/photo-gallery-desk@1x.jpg" alt="photo-gallery">
+            </picture>
+        </div>
+    </section>
 
    
           </main>

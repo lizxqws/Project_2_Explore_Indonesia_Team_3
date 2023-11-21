@@ -1,6 +1,25 @@
+@import "utils/placeholders";
+@import "utils/mixins";
+@import "utils/variables";
 @import "components/header";
 @import "components/carousel";
 @import 'components/section-numbers';
+@import "components/photo-gallery-section";
 @import "components/footer";
-@import "utils/mixins";
 
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.container {
+  width: 315px;
+  margin: 0 auto;
+}
+
+@media (min-width: 1440px) {
+  .container {
+    width: 1270px;
+  }
+}
