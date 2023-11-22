@@ -1,23 +1,133 @@
-.photo-gallery__box, .photo-gallery__wrapper, .photo-gallery {
+.photo-gallery__box, .photo-gallery__wrapper, .photo-gallery, .walkways__box-text, .walkways__box, .walkways {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
 
-.photo-gallery__box-title {
+.photo-gallery__box-title, .walkways__box-text-btn, .walkways__box-text-title {
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
 }
 
-.photo-gallery__box-subtitle {
+.photo-gallery__box-subtitle, .walkways__box-text-subtitle {
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
   line-height: 28px;
 }
 
+.walkways {
+  margin: 0 auto;
+  background-image: url(../src/images/walkways-backgroung.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-top: 40px;
+  padding-bottom: 48px;
+}
+.walkways__box {
+  width: 315px;
+  margin-bottom: 56px;
+}
+.walkways__box-picture img {
+  border-radius: 10px;
+}
+.walkways__box-picture {
+  width: 314px;
+  height: 232px;
+  margin-bottom: 34px;
+}
+.walkways__box-picture-beaches {
+  height: 224px;
+}
+.walkways__box-text {
+  align-items: flex-start;
+  width: 315px;
+  font-family: "DM Sans", sans-serif;
+}
+.walkways__box-text-title {
+  color: #fff;
+  font-size: 40px;
+  line-height: 46px;
+  margin-bottom: 22px;
+}
+.walkways__box-text-subtitle {
+  color: #e0e0e0;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  margin-bottom: 30px;
+}
+.walkways__box-text-btn {
+  display: flex;
+  width: 314px;
+  height: 72px;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  flex-shrink: 0;
+  font-family: "DM Sans", sans-serif;
+  padding: 16px 24px;
+  border-radius: 32px;
+  background-color: #dd2242;
+  border: none;
+  color: #fff;
+  line-height: 150%;
+}
+.walkways__box:last-child {
+  margin-bottom: 0;
+}
+
+@media (min-width: 1440px) {
+  .walkways {
+    padding-top: 207px;
+    padding-bottom: 305px;
+  }
+  .walkways__box {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 1241px;
+    margin-bottom: 192px;
+  }
+  .walkways__box-picture {
+    width: 630px;
+    height: 460px;
+    margin-bottom: 0px;
+  }
+  .walkways__box-picture-beaches {
+    width: 630px;
+  }
+  .walkways__box-text {
+    width: 480px;
+    margin-bottom: 103px;
+  }
+  .walkways__box-text-title {
+    font-size: 42px;
+    line-height: 50px;
+    margin-bottom: 24px;
+  }
+  .walkways__box-text-subtitle {
+    width: 408px;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0.18px;
+    margin-bottom: 32px;
+  }
+  .walkways__box-text-btn {
+    display: flex;
+    width: 180px;
+    height: 59px;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    flex-shrink: 0;
+  }
+  .walkways__box:last-child {
+    flex-direction: row-reverse;
 .explore-title {
   font-family: DM Sans;
   font-size: 50px;
@@ -325,6 +435,10 @@
 .container {
   width: 315px;
   margin: 0 auto;
+}
+
+.hidden-titles {
+  display: none;
 }
 
 @media (min-width: 1440px) {

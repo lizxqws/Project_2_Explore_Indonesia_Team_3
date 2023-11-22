@@ -2,6 +2,7 @@
 @import "utils/mixins";
 @import "utils/variables";
 @import "components/header";
+@import "components/walkways-section";
 @import "components/carousel";
 @import 'components/section-numbers';
 @import "components/photo-gallery-section";
@@ -16,6 +17,10 @@
 .container {
   width: 315px;
   margin: 0 auto;
+}
+
+.hidden-titles {
+  display: none;
 }
 
 @media (min-width: 1440px) {
