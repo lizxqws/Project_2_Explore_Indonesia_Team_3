@@ -8,7 +8,17 @@ text-align: center;
 position: relative;
 top: 150px;
 }
-
+@media (max-width: 480px) {
+  .explore-title{  
+    width: 314px;
+    height: 112px;
+    margin: 0 auto;
+    top: 50px;
+}
+}
+.container_explore{
+  overflow-x: hidden;
+}
 
 .container_explore{
   overflow-x: hidden;
@@ -60,7 +70,11 @@ top: 150px;
 .carousel {
   margin: 0 auto;
 }
-
+@media (max-width: 480px) {
+  .carousel{  
+margin-left: 50px;
+}
+}
 .photo img {
  width: 405px;
  height:257px;
@@ -75,7 +89,6 @@ top: 150px;
 @media (max-width: 480px) {
   .explore-image {
     width: 100vw;
-    height: 2063px;
     background-image: url('../images/explore photomobile.png');
   background-size: cover;
   background-repeat: no-repeat;
