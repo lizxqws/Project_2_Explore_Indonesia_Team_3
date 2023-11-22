@@ -1,15 +1,17 @@
-@import "utils/variables";
-@import "utils/mixin";
 @import "utils/placeholders";
-
+@import "utils/mixins";
+@import "utils/variables";
 @import "components/header";
 @import "components/walkways-section";
+@import "components/carousel";
+@import 'components/section-numbers';
 @import "components/photo-gallery-section";
 @import "components/footer";
 
+
 * {
   box-sizing: border-box;
-  margin: 0;
+ 
 }
 
 .container {
