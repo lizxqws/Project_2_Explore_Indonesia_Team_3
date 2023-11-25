@@ -7,7 +7,7 @@
   padding-top: 29px;
   padding-bottom: 73px;
 
-  &-title {
+  &__title {
     @extend %title-font;
 
     color: $secondaryColor;
@@ -97,11 +97,7 @@
     padding-top: 119px;
     padding-bottom: 117px;
 
-    &__title-box {
-      width: 1141px;
-    }
-
-    &-title {
+    &__title {
       width: 1141px;
       text-align: start;
       font-size: 60px;
@@ -114,28 +110,28 @@
       height: 59px;
       margin-bottom: 0;
       position: relative;
-    }
 
-    &-line::before {
-      content: "";
-      bottom: 59px;
-      display: block;
-      height: 215px;
-      width: 3px;
-      opacity: 0.3;
-      background: rgba(21, 20, 57, 0.4);
-      position: absolute;
-    }
+      &-line::before {
+        content: "";
+        bottom: 59px;
+        display: block;
+        height: 215px;
+        width: 3px;
+        opacity: 0.3;
+        background: rgba(21, 20, 57, 0.4);
+        position: absolute;
+      }
 
-    &-line::after {
-      content: "";
-      top: 59px;
-      display: block;
-      height: 496px;
-      width: 3px;
-      opacity: 0.3;
-      background: rgba(21, 20, 57, 0.4);
-      position: absolute;
+      &-line::after {
+        content: "";
+        top: 59px;
+        display: block;
+        height: 496px;
+        width: 3px;
+        opacity: 0.3;
+        background: rgba(21, 20, 57, 0.4);
+        position: absolute;
+      }
     }
 
     &__article {

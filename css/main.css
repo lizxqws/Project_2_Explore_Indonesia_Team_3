@@ -5,7 +5,7 @@
   flex-direction: column;
 }
 
-.getting-there__article-title, .getting-there-title, .photo-gallery__box-title {
+.getting-there__article-title, .getting-there__title, .photo-gallery__box-title {
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
@@ -73,7 +73,7 @@
   padding-top: 29px;
   padding-bottom: 73px;
 }
-.getting-there-title {
+.getting-there__title {
   color: #010a20;
   text-align: center;
   font-size: 40px;
@@ -140,10 +140,7 @@
     padding-top: 119px;
     padding-bottom: 117px;
   }
-  .getting-there__title-box {
-    width: 1141px;
-  }
-  .getting-there-title {
+  .getting-there__title {
     width: 1141px;
     text-align: start;
     font-size: 60px;
@@ -156,7 +153,7 @@
     margin-bottom: 0;
     position: relative;
   }
-  .getting-there-line::before {
+  .getting-there-number-line::before {
     content: "";
     bottom: 59px;
     display: block;
@@ -166,7 +163,7 @@
     background: rgba(21, 20, 57, 0.4);
     position: absolute;
   }
-  .getting-there-line::after {
+  .getting-there-number-line::after {
     content: "";
     top: 59px;
     display: block;
